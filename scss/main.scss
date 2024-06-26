@@ -1,0 +1,10 @@
+// Base
+
+@import 'base/reset';   /* сбросили все стили */
+@import 'base/vars';    /* определили переменные */
+@import 'base/base';    /* используем определенные переменные в базе, блоках страницы*/
+
+// Blocks
+@import 'blocks/header'; 
+@import 'blocks/nav';
+@import 'blocks/info';
