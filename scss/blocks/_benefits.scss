@@ -1,6 +1,20 @@
-/* .benefits {
+.benefits {
+    position: relative;
+    
+    &::after {
+        content: "II";
 
-} */
+        position: absolute;
+        top: 0;
+        left: calc(50% + 555px);
+        transform: translate(-50%, 0%);
+        line-height: 1.1;
+
+        opacity: 0.02;  //видимость 20%
+        font-size: 400px;
+        font-family: $font-accent;
+    }
+} 
 
 .benefits__row {
     display: flex;

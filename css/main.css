@@ -225,9 +225,21 @@ a:hover {
   background-image: url("./../img/header/phone.svg");
 }
 
-/* .benefits {
+.benefits {
+  position: relative;
+}
+.benefits::after {
+  content: "II";
+  position: absolute;
+  top: 0;
+  left: calc(50% + 555px);
+  transform: translate(-50%, 0%);
+  line-height: 1.1;
+  opacity: 0.02;
+  font-size: 400px;
+  font-family: "Playfair Display", serif;
+}
 
-} */
 .benefits__row {
   display: flex;
   -moz-column-gap: 70px;
@@ -250,7 +262,21 @@ a:hover {
   font-weight: 300;
 }
 
-/* .appartments {} */
+.apartments {
+  position: relative;
+}
+.apartments::after {
+  content: "III";
+  position: absolute;
+  top: 0;
+  right: calc(50% + 555px);
+  transform: translate(50%, 0%);
+  line-height: 1.1;
+  opacity: 0.02;
+  font-size: 400px;
+  font-family: "Playfair Display", serif;
+}
+
 .apartments__title {
   margin-bottom: 88px;
 }
@@ -386,6 +412,17 @@ a:hover {
 
 .video {
   text-align: center;
+  position: relative;
+}
+.video::after {
+  content: "IV";
+  position: absolute;
+  top: 0;
+  left: calc(50% + 555px);
+  transform: translate(-50%, 0%);
+  opacity: 0.02;
+  font-size: 400px;
+  font-family: "Playfair Display", serif;
 }
 
 .video__link {
@@ -424,7 +461,20 @@ a:hover {
 
 } */
 .section-map {
+  position: relative;
   padding: 180px 0;
+}
+.section-map::after {
+  content: "V";
+  position: absolute;
+  z-index: -1;
+  top: 180px;
+  right: calc(50% + 555px);
+  transform: translate(50%, 0%);
+  line-height: 1;
+  opacity: 0.02;
+  font-size: 400px;
+  font-family: "Playfair Display", serif;
 }
 
 .section-map__title {
