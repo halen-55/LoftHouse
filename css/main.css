@@ -168,6 +168,12 @@ a:hover {
   min-height: 840px;
   background: linear-gradient(180deg, #242b33 11.98%, rgba(45, 52, 60, 0.38) 51.04%, #242b33 92.19%), url(./../img/header/header-bg.jpg);
 }
+@media screen and (max-width: 999px) {
+  .header {
+    min-height: unset;
+    row-gap: 50px;
+  }
+}
 
 .header__top-row {
   display: flex;
@@ -196,6 +202,12 @@ a:hover {
   color: #d4c17f;
   font-weight: 700;
 }
+@media screen and (max-width: 999px) {
+  .header__title {
+    font-size: 32px;
+    padding-bottom: 100px;
+  }
+}
 
 .header__title-icon {
   position: absolute;
@@ -208,6 +220,14 @@ a:hover {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 30px;
+}
+@media screen and (max-width: 999px) {
+  .header__footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+  }
 }
 
 .nav {
@@ -232,7 +252,7 @@ a:hover {
   content: "";
   position: absolute;
   left: 0px;
-  top: 0px;
+  top: 50%;
   width: 21px;
   height: 21px;
   transform: translate(0%, -50%);
@@ -244,6 +264,14 @@ a:hover {
 }
 .info--tel::before {
   background-image: url("./../img/header/phone.svg");
+}
+@media screen and (max-width: 999px) {
+  .info {
+    font-size: 14px;
+  }
+  .info--map, .info--tel {
+    padding-left: 25px;
+  }
 }
 
 .benefits {
