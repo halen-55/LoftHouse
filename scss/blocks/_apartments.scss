@@ -1,7 +1,7 @@
 .apartments {
     position: relative;
 
-    &::after {
+    &::before {
         content: "III";
         right: calc(50% + 555px);
         transform: translate(50%, 0%);

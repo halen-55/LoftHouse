@@ -109,12 +109,15 @@ a:hover {
 .container {
   margin: 0 auto;
   padding: 0 15px;
-  width: 1140px;
+  max-width: 1140px;
 }
-.container--small {
+.container--sm {
   max-width: 840px;
 }
 
+/* .container--sm {
+    max-width: 840px; 
+} */
 .text-right {
   text-align: right;
 }
@@ -151,6 +154,10 @@ a:hover {
   font-weight: 700;
 }
 
+/* .no-scroll {
+    overflow-y: hidden;
+}
+ */
 /* используем определенные переменные в базе, блоках страницы*/
 .header {
   display: flex;
@@ -205,7 +212,6 @@ a:hover {
 .info {
   position: relative;
   font-size: 18px;
-  padding-left: 35px;
 }
 .info--map, .info--tel {
   padding-left: 35px;
@@ -217,7 +223,9 @@ a:hover {
   top: 0px;
   width: 21px;
   height: 21px;
+  transform: translate(0%, -50%);
   background-repeat: no-repeat;
+  background-position: center;
 }
 .info--map::before {
   background-image: url("./../img/header/map.svg");
@@ -227,7 +235,9 @@ a:hover {
 }
 
 .benefits {
+  overflow: hidden;
   position: relative;
+  padding: 120px 0;
 }
 .benefits::after {
   content: "II";
@@ -267,7 +277,7 @@ a:hover {
 .apartments {
   position: relative;
 }
-.apartments::after {
+.apartments::before {
   content: "III";
   right: calc(50% + 555px);
   transform: translate(50%, 0%);
@@ -415,6 +425,7 @@ a:hover {
 
 .video {
   text-align: center;
+  overflow: hidden;
   position: relative;
 }
 .video::after {
@@ -469,8 +480,9 @@ a:hover {
   position: relative;
   padding: 180px 0;
 }
-.section-map::after {
+.section-map::before {
   content: "V";
+  position: absolute;
   right: calc(50% + 555px);
   transform: translate(50%, 0%);
   position: absolute;

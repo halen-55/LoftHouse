@@ -22,12 +22,16 @@ a {
 .container {
     margin: 0 auto;
     padding: 0 15px;
-    width: 1140px;
+    max-width: 1140px;
 
-    &--small {
+    &--sm {
         max-width: 840px;
     }
 }
+
+/* .container--sm {
+    max-width: 840px; 
+} */
 
 .text-right {
     text-align: right;
@@ -67,6 +71,8 @@ a {
     font-weight: 700;
 }
 
-
-
+/* .no-scroll {
+    overflow-y: hidden;
+}
+ */
 
