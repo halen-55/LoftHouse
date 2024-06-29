@@ -19,6 +19,20 @@
     align-items: center;
 }
 
+
+
+.header__nav {
+        @include mediaTablet {
+        display: none;
+    }
+}
+
+.head__nav-btn {
+       @include mediaTablet {
+        display: block;
+    }
+}
+
 .header__title {
     position: relative;
     padding-bottom: 121px;
