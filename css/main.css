@@ -208,7 +208,7 @@ a:hover {
 .header__top-row--mobile .header__nav-btn {
   position: fixed;
   top: 50px;
-  right: 15px;
+  right: 40px;
 }
 
 @media screen and (max-width: 999px) {
@@ -367,7 +367,6 @@ a:hover {
 .benefits {
   overflow: hidden;
   position: relative;
-  padding: 120px 0;
 }
 .benefits::after {
   content: "II";
@@ -387,14 +386,33 @@ a:hover {
   -moz-column-gap: 70px;
        column-gap: 70px;
 }
+@media screen and (max-width: 999px) {
+  .benefits__row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    gap: 40px 30px;
+  }
+}
 
 .benefits__item {
   text-align: center;
   padding: 120px 0;
 }
+@media screen and (max-width: 999px) {
+  .benefits__item {
+    padding: 0;
+  }
+}
 
 .benefits__item-img {
   margin-bottom: 53px;
+}
+@media screen and (max-width: 999px) {
+  .benefits__item-img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 20px;
+  }
 }
 
 .benefits__item-text {
